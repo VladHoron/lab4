@@ -15,16 +15,16 @@ protected:
 	string country;
 public:
 	Film();
-	Film(string nameIn, int minutesIn, double ratingIn, string actorIn, string countryIn, int budgetIn, string genreIn);
+	Film(string nameFilm, int minutesFilm, double ratingFilm, string actorFilm, string countryFilm, int budgetFilm, string genreFilm);
 	int budget;
 	string genre;
 
-	void setName(string nameIn);
-	void setMinutes(int minutesIn);
-	void setRating(double ratingIn);
-	void setActor(string actorIn);
-	void setCountry(string countryIn);
-	void setBudget(int budgerIn);
+	void setName(string nameFilm);
+	void setMinutes(int minutesFilm);
+	void setRating(double ratingFilm);
+	void setActor(string actorFilm);
+	void setCountry(string countryFilm);
+	void setBudget(int budgetFilm);
 	void setGenre(string genreIn);
 
 	string getName();
@@ -56,39 +56,39 @@ Film::~Film()
 	cout << "CLearing data..." << "\n" << endl;
 }
 
-void Film::setName(string nameIn)
+void Film::setName(string nameFilm)
 {
-	name = nameIn;
+	name = nameFilm;
 }
 
-void Film::setMinutes(int minutesIn)
+void Film::setMinutes(int minutesFilm)
 {
-	minutes = minutesIn;
+	minutes = minutesFilm;
 }
 
-void Film::setRating(double ratingIn)
+void Film::setRating(double ratingFilm)
 {
-	rating = ratingIn;
+	rating = ratingFilm;
 }
 
-void Film::setActor(string actorIn)
+void Film::setActor(string actorFilm)
 {
-	actor = actorIn;
+	actor = actorFilm;
 }
 
-void Film::setCountry(string countryIn)
+void Film::setCountry(string countryFilm)
 {
-	country = countryIn;
+	country = countryFilm;
 }
 
-void Film::setBudget(int budgetIn)
+void Film::setBudget(int budgetFilm)
 {
-	budget = budgetIn;
+	budget = budgetFilm;
 }
 
-void Film::setGenre(string genreIn)
+void Film::setGenre(string genreFilm)
 {
-	genre = genreIn;
+	genre = genreFilm;
 }
 
 string Film::getName()
